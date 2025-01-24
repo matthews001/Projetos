@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Barbearia</h1>
+        <nav>
+            <ul>
+                <li><a href="#cliente">Área do Cliente</a></li>
+                <li><a href="#dono">Área do Dono</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cliente">
+        <h2>Área do Cliente</h2>
+        <form id="clientForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="dono">
+        <h2>Área do Dono</h2>
+        <button id="viewClients">Ver Clientes Cadastrados</button>
+        <ul id="clientList"></ul>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
